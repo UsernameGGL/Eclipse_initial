@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="css/tn_css.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>试用期信息</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body>
+<a href="Tn_probationInformation.html">查询试用期员工</a>>>试用期信息
+<form action="Tn_probationInformation.html" method="post"><br>
+<table  class="border" align="center"  >
+
+<tr><td align="right">员工编号：</td><td><input name="tn_name" type="text"  value="110023"/></td><td align="right">姓    名：</td><td><input name="tn_name" type="text"  value="王同"/></td></tr>
+<tr><td align="right">部门名称：</td><td><input name="tn_name" type="text"  value="软件开发"/></td><td align="right">岗位名称：</td><td><input name="tn_name" type="text"  value="java程序员"/></td></tr>
+<tr><td align="right">试用期状态：</td><td>
+                       <select name="tn_probationMode" >
+                         <option value="input">1.转正</option>
+			 <option value="out">2.不通过</option>
+			 <option value="Extension">3.延期</option>
+		       </select></td><td</td></tr>
+<tr><td align="right">考核结果：</td><td><input name="beginData" type="text" /></td><td align="right">处理日期：</td><td><input name="tryData" type="text" />  </td></tr>
+<tr><td align="right" >备注：</td><td><textarea name="overData" type="textarea" ></textarea></td></tr>
+<tr><td align="right">考核评语：</td><td><textarea name="Py" type="textarea" ></textarea></td></tr>
+<tr><td align="right"><input name="OK" type="submit"  class="button" value="保存"/></td><td>
+<input name="reset" type="reset"  class="button"/>
+<input type="reset" value="返回" class="button" onclick="change()"></tr>
+</table >
+</form>
+
+
+</body>
+</html>
+
+<script>
+  function change(){
+   url="change.html";
+   window.location.assign(url);
+}
+</script>

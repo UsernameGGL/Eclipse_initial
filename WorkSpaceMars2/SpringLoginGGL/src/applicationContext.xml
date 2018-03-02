@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	<bean id="nameStrategy" class="com.upc.service.CheckUserByName">
+		<property name="minLength" value="6"/>
+		<property name="maxLength" value="10"/>
+		<property name="namePrefix" value="upc"/>
+	</bean>
+	
+	<bean id="pwdStrategy" class="com.upc.service.CheckUserByPwd">
+		<property name="minLength" value="8"/>
+		<property name="maxLength" value="20"/>
+		<property name="pwdPrefix" value="2017"/>
+	</bean>
+	
+	<bean id="checkUser" class="com.upc.service.CheckUserImpl">
+		<property name="strategy" ref="nameStrategy"/>
+	</bean>
+	
+	<bean id="before" class="com.advice.BeforeLogAdvice"></bean>
+	<bean id="after" class="com.advice.AfterLogAdvice"></bean>
+	
+	<bean id="loginValidate" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="proxyInterfaces">
+			<value>com.upc.service.CheckUser</value>
+		</property>
+		<property name="interceptorNames">
+			<list>
+				<value>before</value>
+				<value>after</value>
+			</list>
+		</property>
+		<property name="target">
+			<ref bean="checkUser"/>
+		</property>
+	</bean>
+
+</beans>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<!--为工程引入dtd文件，编写代码做自动补齐功能  -->
+<struts><!--struts标签是文件的根标签  -->
+    <!-- /Login.jsp -->
+	<package name="default" namespace="/" extends="struts-default">
+	    <action name="demoest" class="com.kms.action.DemoExtAction">
+	        <result>/ok.jsp</result>
+	    </action>
+	    <action name="demoimpl" class="com.kms.action.DemoImplAction">
+	        <result>/ok.jsp</result>
+	    </action>
+	    <action name="demo" class="com.kms.action.DemoAction" method="execute">
+	        <result name="success">/ok.jsp</result>
+	    </action>
+	</package>
+</struts>

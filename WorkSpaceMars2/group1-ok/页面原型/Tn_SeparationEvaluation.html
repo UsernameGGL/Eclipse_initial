@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" href="css/tn_css.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>离职人事评价</title>
+</head>
+
+<body>
+<form action="#" method="post"><p>
+
+当前位置:<a href="Tn_SeparationQuery.html">离职管理</a>>><a href="Tn_SeparationSearch1.html">在职人员查询</a>>>离职信息<br><br>
+
+<table align="center" class="border">
+<tr><td>部门编号：</td><td><input name="tn_overData1" type="text" value="110023" /> </td>
+<td>部门名称：</td><td><input name="tn_overData1" type="text" value="java开发部" /></td></tr>
+
+<tr><td>员工编号：</td><td><input name="tn_overData1" type="text" value="110021" /></td>
+<td>员工姓名：</td><td><input name="tn_overData1" type="text" value="张三" /></td></tr>
+
+<tr><td>离职日期：</td><td><input name="tn_overData" type="text" />  </td>
+<td>离职类型：</td><td><select name="tn_separationType" >
+             <option value="tn_initiative ">主动辞职</option>
+			 <option value="tn_dismissa">1.辞退</option>
+			 <option value="tn_Retired">2.退休</option>
+			 <option value="tn_Dismissed">3.开除</option>
+			 <option value="tn_pass">4.试用期未通过</option>
+			 </select>  </td></tr>
+			 
+<tr><td>离职去向：</td><td><input name="tn_leaveDestination" type="text" />  </td>
+<td></td><td></td></tr>
+<tr><td>备注：</td><td><textarea name="tn_Notes"></textarea></td></tr>
+<tr><td></td><td><input class="button" name="OK" type="submit" value="确定"/>
+<input class="button" name="重置" type="reset" />&nbsp;<input class="button" type="button" value="返回" onClick="go_back();"></td></tr>
+</table >
+</form>
+</body>
+</html>

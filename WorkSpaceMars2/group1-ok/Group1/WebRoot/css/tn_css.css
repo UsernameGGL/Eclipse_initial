@@ -1,0 +1,143 @@
+
+/********************************
+
+
+/*****************************************************
+页面整体
+*****************************************************/
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 1px; HEIGHT: auto;SCROLLBAR-FACE-COLOR: #edf7fe; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff;SCROLLBAR-SHADOW-COLOR: #4392d6; SCROLLBAR-3DLIGHT-COLOR: #4392d6; SCROLLBAR-ARROW-COLOR: #4392d6; SCROLLBAR-TRACK-COLOR: #f6f8ff;SCROLLBAR-DARKSHADOW-COLOR: #ffffff
+}
+IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+H1 {
+	MARGIN-TOP: 12px; FONT-WEIGHT: bold; FONT-SIZE: 14px; MARGIN-BOTTOM: 2px; COLOR: #3366cc; LETTER-SPACING: 1px; TEXT-ALIGN: center
+}
+SELECT {
+	FONT-SIZE: 12px
+}
+INPUT {
+	FONT-SIZE: 12px
+}
+TD {
+	FONT-SIZE: 12px;  LINE-HEIGHT: 18px; FONT-FAMILY: "Verdana", "Tahoma", "Arial"
+}
+
+/*****************************************************
+Hyperlink链接
+*****************************************************/
+A:link {
+	COLOR: #3366cc; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #3366cc; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #3366cc; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #3333cc; TEXT-DECORATION: underline
+}
+
+
+
+
+/*****************************************************
+Button
+*****************************************************/
+.buttoncss
+{
+	border-right: black 1px;
+	background-attachment: fixed;
+	background-image: url(../images/button1.gif);
+	font: menu;
+	vertical-align: baseline;
+	width: 57px;
+	cursor: hand;
+	color: #000000;
+	border-top-style: none;
+	border-bottom: black 1px;
+	background-repeat: no-repeat;
+	border-left-style: none;
+	height: 20px;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+.Text
+{
+	border-right: 1px solid;
+	border-top: 1px solid;
+	border-left: 1px solid;
+	direction: ltr;
+	border-bottom: 1px solid;
+	font-family: 宋体;
+	border-collapse: collapse;
+	background-color: transparent;
+}
+
+/**选中行后的颜色变换*/
+.LP	{PADDING-LEFT:4px;PADDING-RIGHT:4px;}
+.LT	{BACKGROUND-COLOR:#85A5F4;BORDER:1px solid #666666;}
+
+
+/************************************************上下分栏式样控制    begin************************************************/
+
+
+/**功能按钮区域的显示控制*/
+TABLE.TableFunClass
+{
+	width:100%;
+	height:22px;
+	text-align:center;
+	background-color:#D3D3DD;
+}
+.TableFunClass td
+{
+	white-space:nowrap;
+}
+
+/**查询条件输入区域的显示控制*/
+TABLE.TableQueryClass
+{
+	width:100%;
+	height:22px;
+	background-color:#D3D3DD;
+}
+.QueryParaName
+{	
+
+	padding: 0;
+	background-color:#E6E6E6;
+	text-align:center;
+}
+.QueryParaValue
+{
+	background-color:#E6E6E6;
+	text-align:left;
+}
+
+/**主数据窗口的提示区域显示控制*/
+TABLE.TableMainTipClass
+{
+	width:100%;
+	height:22px;
+	background-color:#FFFFFF;
+}
+.TableMainTipClass td
+{	
+	padding: 0;
+	text-align:left;
+	font-weight: bold;
+}
+
+
+/**隔行颜色变换*/
+#DetailScrollTable tr {
+	background-color: expression(this.className == 'LT' ? '#85A5F4' : ((this.sectionRowIndex%2==0) ? "#ffffff" :"#f4f4f4" ))
+}
+
+	
+	

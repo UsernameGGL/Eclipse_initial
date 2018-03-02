@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="（正经脸）"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="看我吹了那么多"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="你一定迫不及待 了吧"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="卧槽还能聊天啊真NB"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="至少我是这么想的。。。"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="但是！"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="但是！"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="我所说的那些功能"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="在这个软件里"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="一个都没有！"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="这是为什么呢？"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="原因请点下个图标查看"
+        />
+ 
+ 
+ 
+    
+
+
+</LinearLayout>

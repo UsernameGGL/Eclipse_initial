@@ -1,0 +1,85 @@
+<html>
+<head>
+<link rel="stylesheet" href="../css/tn_css.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>Change</title>
+
+</head>
+<script language=JavaScript src="../js/script.js"></script>
+<body>
+当前位置:部门调动管理&gt;&gt;员工信息查询<br>
+<div align="right"><a href="changeList.html"">已调动部门员工信息</a></div>
+  
+<form method="post" action="">
+<table align="center" cellspacing="0">
+  <tr>
+    <td align="center" >
+	<span style="cursor:hand" onClick="dispTab('showselect','show','hidden',openitem)">员工信息查询 
+		<span id="hidden">[已隐藏]</span>
+		<span  id="show" style="display:none" >[已显示]</span>
+	</span></td>
+  </tr>
+  </table>
+
+  <table align="center" style="display:none" id="showselect" cellspacing="0" class="border">
+    <tr>
+	<td align="center">员工号：<input type="text" name=""></td>
+	</tr>
+	<tr>
+	<td align="center">姓名:<input name="" type="text"></td>
+ 	</tr>
+	
+	<tr>
+	<td align="center" >员工所在部门:
+	  <select  name="">
+	    <option>1:技术开发部</option>
+	      <option>2:人力资源部</option>
+	   </select></td>     
+	</tr>
+	<tr>
+    <td>&nbsp;
+    <input type="submit" value="查询" class="button">
+    &nbsp;&nbsp;<input type="reset" value="重新填写" class="button">
+    </td>
+  </tr>
+  </table>
+  </form>
+
+<form method="post" action="">
+<table width="100%" align="center" cellpadding="0" cellspacing="0" class="border">
+  <tr>
+    <td align="left">员工号</td>
+    <td align="center" border=>姓名</td>
+    <td align="center">员工部门</td>
+    <td align="left">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left">&nbsp;0001</td>
+    <td align="center">张三</td>
+    <td align="center">技术开发部</td>
+    <td align="left"><a href="confirm.html">部门调动</a></td>
+  </tr>
+  <tr>
+    <td align="left">&nbsp;0002</td>
+    <td align="center">李立</td>
+    <td align="center">技术开发部</td>
+    <td align="left"><a href="confirm.html">部门调动</a></td>
+  </tr>
+  <tr>
+    <td align="left">&nbsp;0003</td>
+    <td align="center">刘兴</td>
+    <td align="center">人力资源部</td>
+    <td align="left"><a href="confirm.html">部门调动</a></td>
+  </tr>
+  <tr>
+    <td align="left">&nbsp;0004</td>
+    <td align="center">孙全</td>
+    <td align="center">人力资源部</td>
+    <td align="left"><a href="confirm.html">部门调动</a></td>
+  </tr>
+</table>
+</form>
+</body>
+</html>
+
+

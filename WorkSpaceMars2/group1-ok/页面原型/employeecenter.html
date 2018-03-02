@@ -1,0 +1,164 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/tn_css.css" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+<title>岗位调动管理</title>
+</head>
+<script language=JavaScript src="js/script.js"></script>
+<body >
+<form name="form1">
+当前位置:员工信息中心
+<br>
+<form  action="Tn_ProbationSearch.html" method="post">
+  <table  width="100%" align="center" >
+  <tr>
+    <td align="center" >
+	<span  style="cursor:hand" onClick="dispTab('showselect','show','hidden',openitem)">员工信息查询
+		<span id="hidden">[已隐藏]</span>
+		<span  id="show" style="display:none">[已显示]</span>
+	</span></td>
+  </tr>
+
+  <table class="border" align="center" style="display:none" id="showselect">
+   <tr class="title"> 
+<td align="right"> 员工编号：</td><td><input name="tn_number" type="text"  /></td></tr>
+<tr colspan="4"><td align="right">姓    名：</td><td><input name="tn_name" type="text"  /></td></tr>
+<tr colspan="4"><td align="right">部门名称：</td><td><input name="tn_branchName" type="text" /></td></tr>
+<tr colspan="4"><td align="right">岗位名称：</td><td><input name="tn_jobName" type="text" /></td></tr>
+  <tr colspan="4"><td></td><td><input name="OK" type="submit"  class="button" value="查询"/>
+<input name="reset" type="reset"  class="button" value="重置" /> </td></tr>
+
+</table>
+<p>
+<table width="100%" align="center" class="border">
+	<tr class="title" colspan="6">
+
+        <td width="75">员工编号</td>
+    <td width="97">姓名</td>
+    <td width="121">部门名称</td>
+    <td width="120">岗位名称</td>
+    <td width="121">联系电话</td>
+    <td width="121">电子邮件</td>
+	<td width="121">&nbsp;</td>
+  </tr>
+  <tr colspan="6">
+    
+    <td>89757</td>
+    <td>王同</td>
+    <td>软件开发</td>
+    <td>Java程序员</td>
+    <td>154003601545</td>
+    <td>41421@qq.com</td>
+     <td><a href="employee1.html">修改</a></td>	
+  </tr>
+    <tr colspan="6">
+    
+    <td height="24">89757</td>
+    <td>方冰</td>
+    <td>软件开发</td>
+    <td>Java程序员</td>
+    <td>13915114224</td>
+    <td>56544@qq.com</td>
+    <td><a href="employee1.html">修改</a></td>	
+  </tr>
+	
+</table>
+<table>
+	<tr>
+		<td height=13 colspan="6"  align="center">&nbsp; <br>&nbsp;
+		</td>
+	</tr><tr><td valign="top"><br></td><td valign="top"><br></td><td valign="top"><br></td><td valign="top"><br></td><td valign="top"><br></td><td valign="top"><br></td></tr>
+</table>
+
+</form>
+</body>
+</html:html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+	function confirmDel(){
+		confirm("确认删除该实施经理?")
+	}
+	function addProject(){
+		url="editImplementation.html"
+		window.location.assign(url);
+	}
+	function go_back(){
+		url="../index.html"
+		window.location.assign(url);
+	}
+	
+	function confirmDelSelected(){
+		checkSelectByHintT(form1.customerIDs,"复选框未定义","请选择要删除实施经理","确定要删除");
+		url="listImplementationM.html"
+		window.location.assign(url);
+	}
+	function edit(){
+		url="searchImplementation.html"
+		window.location.assign(url);
+	}
+
+
+	function checkSelectByHintT(checksbox,noDefineHint,noSelectHint,areyousure){
+	var result = checkSelect(checksbox)
+	if( result == 1)
+	  alert(noDefineHint);
+	else if( result ==2 )
+	  alert(noSelectHint);
+	else if( result ==0 )
+		confirm(areyousure);
+	return result;
+}
+
+/*
+ *  检查checksbox是否有复选框被选中，如果checksbox没定义则返回1,如果没选中则并返回2。
+ *  如果有则返回0。
+ */
+function checkSelect(checksbox){
+	if( checksbox == undefined || checksbox==null )
+		return 1;
+	if( checksbox.length == undefined ){
+		if( checksbox.checked )
+		
+			return 0;
+		else
+			return 2;
+	}else{
+		var i;
+		for(i=0;i<checksbox.length;i++)
+		   if( checksbox[i].checked )
+		   
+			  return 0;
+		return 2;
+	}
+}
+	
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+

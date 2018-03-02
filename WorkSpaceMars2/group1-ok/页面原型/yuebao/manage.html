@@ -1,0 +1,150 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/tn_css.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>manage.html</title>
+</head>
+
+<body>
+<p>当前位置:报表管理</p>
+<form method="post" action="new_works_list.html">
+<table align="center" cellspacing="0" cellpadding="0" class="border">
+  <tr>
+    <td colspan="6" align="center">新聘员工报表查询</td>
+  </tr>
+  <tr>
+    <td align="right">开始日期:</td>
+    <td align="leftr"><input type="text" name="textfield2"></td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td align="right">结束日期:</td>
+    <td align="left"><input type="text" name="textfield"></td>
+  </tr>
+  <tr>
+    <td align="right">部门:</td>
+    <td><select name="select">
+      <option value="不限" selected>1.不限</option>
+      <option value="技术开发部">2.技术开发部</option>
+      <option value="人力资源部">3.人力资源部</option>
+    </select>
+    </td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="right" ><input type="submit" name="Submit" value="查询" class="button"></td>
+    <td >&nbsp;<input type="reset" name="Submit2" value="重新填写" class="button"></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</form>
+
+<form method="post" action="leave_works_list.html" >
+ <table align="center" cellspacing="0" cellpadding="0" class="border">
+  <tr>
+    <td colspan="5" align="center">离职员工报表查询</td>
+  </tr>
+  <tr>
+    <td align="right">开始日期:</td>
+    <td align="leftr"><input type="text" name="textfield2"></td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td align="right">结束日期:</td>
+    <td align="left"><input type="text" name="textfield"></td>
+  </tr>
+  <tr>
+    <td align="right">部门:</td>
+    <td><select name="select">
+      <option value="不限" selected>1.不限</option>
+      <option value="技术开发部">2.技术开发部</option>
+      <option value="人力资源部">3.人力资源部</option>
+    </select>
+    </td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="right" ><input type="submit" name="Submit" value="查询" class="button"></td>
+    <td >&nbsp;<input type="reset" name="Submit2" value="重新填写" class="button"></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</form>
+<form method="post" action="depart_change_list.html">
+<table align="center" cellspacing="0" cellpadding="0" class="border">
+  <tr>
+    <td colspan="5" align="center">部门调动员工报表查询</td>
+  </tr>
+  <tr>
+    <td align="right">开始日期:</td>
+    <td align="leftr"><input type="text" name="textfield2"></td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td align="right">结束日期:</td>
+    <td align="left"><input type="text" name="textfield"></td>
+  </tr>
+  <tr>
+    <td align="right"><input type="submit" name="Submit" value="查询"  class="button"></td>
+    <td >&nbsp;<input type="reset" name="Submit2" value="重新填写" class="button"></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</form>
+<form method="post" action="work_change_list.html">
+<table align="center" cellspacing="0" cellpadding="0" class="border">
+  <tr>
+    <td colspan="6" align="center">岗位调动员工报表查询</td>
+  </tr>
+  <tr>
+    <td align="right">开始日期:</td>
+    <td align="leftr"><input type="text" name="textfield2"></td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td align="right">结束日期:</td>
+    <td align="left"><input type="text" name="textfield"></td>
+  </tr>
+  <tr>
+    <td align="right" ><input type="submit" name="Submit" value="查询" class="button"></td>
+    <td >&nbsp;<input type="reset" name="Submit2" value="重新填写" class="button"></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</form>
+
+<form method="post" action="month_list.html">
+<table width="44%" align="center" border="0" cellspacing="0" cellpadding="0" class="border">
+  
+  <tr>
+    <td colspan="3" align="center">人事月报表查询</td>
+  </tr>
+  <tr>
+    <td align="right" width="34%">月份:</td>
+    <td align="center"><select name="select">
+      <option value="当前月" selected>当前月</option>
+      <option value="一月">1.一月</option>
+      <option value="二月">2.二月</option>
+      <option value="三月">3.三月</option>
+      <option value="四月">4.四月</option>
+      <option value="五月">5.五月</option>
+      <option value="六月">6.六月</option>
+      <option value="七月">7.七月</option>
+      <option value="八月">8.八月</option>
+      <option value="九月">9.九月</option>
+      <option value="十月">10.十月</option>
+      <option value="十一月">11.十一月</option>
+      <option value="十二月">12.十二月</option>
+    </select>
+    </td>
+    <td align="right">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="Submit" value="查询" class="button">
+    <input type="reset" name="Submit2" value="重新填写" class="button"></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</form>
+</body>
+</html>
+

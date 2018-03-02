@@ -1,0 +1,98 @@
+<html>
+<head>
+<link rel="stylesheet" href="../css/tn_css.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>changeList.html</title>
+</head>
+<script language=JavaScript src="../js/script.js"></script>
+<body>
+当前位置:部门调动管理&gt;&gt;已调动部门员工信息查询<br>
+<div align="right"><a href="change.html"">员工信息</a></div>
+<form method="post" action="">
+ <table align="center">
+  <tr>
+    <td align="center" >
+	<span style="cursor:hand" onClick="dispTab2('showselect2','show2','hidden2',openitem)">已调动部门员工信息查询 
+		<span id="hidden2">[已隐藏]</span>
+		<span  id="show2" style="display:none" >[已显示]</span>
+	</span></td>
+  </tr>
+  </table>
+
+  <table align="center" style="display:none" id="showselect2" cellspacing="0" class="border">
+  </tr>
+	<td align="center">开始日期：<input type="text" name=""></td>
+	</tr>
+	<tr>
+	<td align="center">结束日期:<input name="" type="text"></td>
+ 	</tr>
+	</tr>
+	<td align="center">员工编号：<input type="text" name=""></td>
+	</tr>
+	<tr>
+	<td align="center">员工姓名:<input name="" type="text"></td>
+ 	</tr>
+	<tr>
+	<td align="center" >调动方式:
+	  <select name="">
+	    <option>1.升职</option>
+	      <option>2.降职</option>
+	       <option>.:平级调动</option>
+	   </select> </td>    
+	</tr>
+	<tr>
+    <td>&nbsp;
+    <input type="submit" value="查询" class="button">
+    &nbsp;&nbsp;<input type="reset" value="重新填写" class="button">
+    </td>
+  </tr>
+  </table>
+</form>
+   <table width="100%" border="0" cellspacing="0" cellpadding="0" class="border">
+  <tr>
+    <td width="6%" align="center">员工号</td>
+	<td width="10%" align="center">姓名</td>
+	<td width="13%" align="center">原部门名称</td>
+    <td width="13%" align="center">新部门名称</td>
+    <td width="14%" align="center"> 调动原因</td>
+    <td width="13%" align="center">调动类型</td>
+    <td width="13%" align="center">调动方式</td>
+    <td width="9%" align="center">调动日期</td>
+    <td width="9%" align="center">备注</td>
+  </tr>
+  <tr>
+    <td align="center">0001</td>
+	<td align="center">张三</td>
+	<td align="center">技术开发部</td>
+    <td align="center">人力资源部</td>   
+    <td align="center">行政调动</td>
+    <td align="center">主动调动</td>
+    <td align="center">升职</td>
+    <td align="center">2008-12-27</td>
+    <td align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center">0002</td>
+	<td align="center">刘兴</td>
+	<td align="center">技术开发部</td>
+    <td align="center">人力资源部</td>
+    <td align="center">业务需要</td>
+    <td align="center">被动调动</td>
+    <td align="center">降职</td>
+    <td align="center">2009-2-23</td>
+    <td align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center">0003</td>
+	<td align="center">李立</td>
+    <td align="center">人力资源部</td>
+    <td align="center">技术开发部</td>
+    <td align="center">业务需要</td>
+    <td align="center">数据错误</td>
+    <td align="center">平级调动</td>
+    <td align="center">2009-2-23</td>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

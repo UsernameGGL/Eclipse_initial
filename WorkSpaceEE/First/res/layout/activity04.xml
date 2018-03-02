@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="卧槽这破软件是全英的啊 啊啊啊"
+	    android:layout_weight="1"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="卧槽国内还有墙插件下不了啊啊"
+	    android:layout_weight="1"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="卧槽第一天就TM下载安装就过去了啊"
+	    android:layout_weight="1"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="我要死了"
+	    android:layout_weight="1"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="我要死了"
+	    android:layout_weight="1"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="我要死了"
+	    android:layout_weight="1"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="我要死了"
+	    android:layout_weight="1"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="我真的要死了"
+	    android:layout_weight="1"
+        />
+    
+
+</LinearLayout>

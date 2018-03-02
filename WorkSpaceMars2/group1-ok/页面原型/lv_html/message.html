@@ -1,0 +1,121 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/tn_css.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>message</title>
+</head>
+<script language="javascript" type="text/javascript" src="../js/script.js"></script>
+<body>
+<p>当前位置:部门基本信息</p>
+
+<form method="post" action="">
+<table align="center" cellspacing="0">
+  <tr>
+    <td align="center" >
+	<span style="cursor:hand" onClick="dispTab('showselect','show','hidden',openitem)">部门信息查询<span id="hidden">[已隐藏]</span>
+	  <span id="show" style="display:none" >[已显示]</span>	</span></td>
+  </tr>
+ </table>
+<table  align="center" id="showselect" style="display:none" class="border">
+  <tr>
+    <td align="center">部门编号:
+      <input type="text" name="textfield"></td>
+ 
+    <td align="center">部门名称:
+      <input type="text" name="textfield2"></td>
+  </tr>
+  <tr>
+    <td >部门类型:
+      <select name="">
+        <option value="不限">1.不限</option>
+        <option value="公司">2.公司</option>
+        <option value="部门">3.部门</option>
+      </select>
+      </td><td></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;
+    <input type="submit" value="查询" class="button" >
+    &nbsp;&nbsp;<input type="reset" value="重新填写" class="button" >
+    </td>
+  </tr>
+</table>
+</form>
+<form method="post" action="">
+<table width="100%" align="center" cellpadding="0" cellspacing="0" class="border">
+  <tr>
+    <td ><div align="center">部门编号</div></td>
+    <td><div align="center">部门名称</div></td>
+    <td><div align="center">部门类型</div></td>
+    <td><div align="center">电话</div></td>
+    <td><div align="center">传真</div></td>
+    <td><div align="center">描述</div></td>
+    <td><div align="center">上级部门</div></td>
+    <td><div align="center">成立日期</div></td>
+    <td><div align="center">员工</div></td>
+    <td><div align="center">删除</div></td>
+  </tr>
+  <tr>
+    <td><div align="center">A1001</div></td>
+    <td><div align="center"><a href="update.html">技术开发部</a></div></td>
+    <td><div align="center">部门</div></td>
+    <td><div align="center">024--85793</div></td>
+    <td><div align="center">024--85759</div></td>
+    <td><div align="center">提供技术支持</div></td>
+    <td><div align="center">分公司</div></td>
+    <td><div align="center">2007-03-05</div></td>
+    <td><div align="center"><a href="search.html">员工</a></div></td>
+    <td><div align="center"><a href="#">删除</a></div></td>
+  </tr>
+  <tr>
+    <td><div align="center">A1001</div></td>
+    <td><div align="center"><a href="update.html">技术开发部</a></div></td>
+    <td><div align="center">部门</div></td>
+    <td><div align="center">024--85783</div></td>
+    <td><div align="center">024--85758</div></td>
+    <td><div align="center">提供技术支持</div></td>
+    <td><div align="center">分公司</div></td>
+    <td><div align="center">2007-03-05</div></td>
+    <td><div align="center"><a href="search.html">员工</a></div></td>
+    <td><div align="center"><a href="#">删除</a></div></td>
+  </tr>
+  <tr>
+    <td><div align="center">A1002</div></td>
+    <td><div align="center"><a href="update.html">人力资源部</a></div></td>
+    <td><div align="center">部门</div></td>
+    <td><div align="center">024--85773</div></td>
+    <td><div align="center">024--85757</div></td>
+    <td><div align="center">提供人资服务</div></td>
+    <td><div align="center">总公司</div></td>
+    <td><div align="center">2007-03-05</div></td>
+    <td><div align="center"><a href="search.html">员工</a></div></td>
+    <td><div align="center"><a href="#">删除</a></div></td>
+  </tr>
+  <tr>
+    <td><div align="center">A1002</div></td>
+    <td><div align="center"><a href="update.html">人力资源部</a></div></td>
+    <td><div align="center">部门</div></td>
+    <td><div align="center">024--85763</div></td>
+    <td><div align="center">024--85756</div></td>
+    <td><div align="center">提供人资服务</div></td>
+    <td><div align="center">总公司</div></td>
+    <td><div align="center">2007-03-05</div></td>
+    <td><div align="center"><a href="search.html">员工</a></div></td>
+    <td><div align="center"><a href="#">删除</a></div></td>
+  </tr>
+</table>
+<br>
+ <input type="button" value="增加"  class="button"  onClick="add()">
+</form>
+
+</body>
+</html>
+<script>
+  function add(){
+		url="add.html"
+		window.location.assign(url);
+	}
+</script>

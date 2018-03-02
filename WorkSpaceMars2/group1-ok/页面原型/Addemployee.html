@@ -1,0 +1,82 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/tn_css.css" />
+</head>
+
+<script type="text/javascript">
+function fun(){
+style="visibility: none;" 
+　　document.getElementById("yy").style.visibility="hidden";//隐藏 
+}
+function fun1(){
+style="visibility: none;" 
+　　document.getElementById("yy").style.visibility="visible";//显示 
+}
+
+function qun(){
+style="visibility: none;" 
+　　document.getElementById("qq").style.visibility="hidden";//隐藏 
+}
+function qun1(){
+style="visibility: none;" 
+　　document.getElementById("qq").style.visibility="visible";//显示 
+}
+</script>
+<body onload="fun(),qun()">
+当前位置：员工信息
+<form action="" method="">
+注：* 为必须填写,日期格式：1986-10-1
+<center>
+
+<table class="border"   width="100%">
+<tr><td align="right" >*   员工编号</td><td> <input type="text" name="yg"></td><td align="right">*   姓名 </td><td><input type="text" name="xm"></td><td align="right">*   性别</td><td><select  name="xb"> <option value="n" selected>1:男</option><option value="v">2:女</option></select></td></tr>
+
+<tr><td align="right">*   出生日期 </td><td><input type="text" name="cs"></td><td align="right">*   身份证号 </td><td><input type="text" name="ss"></td><td align="right"></td><td></td></tr>
+
+<tr><td align="right">*   入职日期 </td><td><input type="text" name="rz"></td><td align="right">*   参加工作时间</td><td><input type="text" name="cj"></td><td align="right">*   用工形式</td><td><select  name="yg"> <option value="zs" selected>1:正式员工</option><option value="ls">2:临时员工</option></select></td></tr>
+
+<tr><td align="right">*   人员来源</td><td><select  name="ry"> <option value="xy" selected>1:校园招聘</option><option value="sh">2:社会招聘</option>option value="qt1" selected>3:其他</option></select></td><td align="right">*   政治面貌</td><td><select  name="zz"> <option value="dy" selected>1:党员</option><option value="yb" >2:预备党员</option><option value="sh">3:团员</option><option value="qt2" >4:其它</option></select></td><td align="right">*  民族</td><td><select  name="mz"> <option value="hz" selected>1:汉族</option><option value="mz">2:满族</option><option value="zz1" >3:壮族</option></select></td></tr>
+
+<tr><td align="right">是否为试用期</td><td><input type="radio" name="you" value="you" onclick="qun1()" >是<input type="radio" name="you" value="you"onclick="qun()"  checked>否</td></tr>
+
+
+
+
+
+<tr><td></td><td align="right"><input type="button" class="button"  value="显示更多信息" onClick="fun1()"></td><td><input type="button" value="隐藏更多信息" class="button" onClick="fun()"></td> <td align="right"><input type="button"  class="button" value="  确认提交 " onClick="window.location.href='employeecenter.html' "></td><td><input type="reset" value="  重新填写  " class="button"></td></tr>
+
+
+
+</table>
+
+<div id="qq" class="border"   width="100%"><td align="right">试用期开始日期：</td><td><input type="text" ></td><td align="right">试用期结束日期：</td><td><input type="text"></td></div>
+
+
+
+<div id="yy">
+<table class="border"   width="100%">
+<tr><td align="right">籍贯 </td><td><input type="text" name="jg"></td><td align="right">联系电话 </td><td><input type="text" name="lx"></td><td align="right">电子邮件 </td><td><input type="text" name="dz"></td></tr>
+
+<tr><td align="right">身高 </td><td><input type="text" name="sg"></td> <td align="right"> 血型</td><td><select  name="xx"> <option value="a" selected>1:A型</option><option value="b">2:B型</option><option value="ab" >3:AB型</option><option value="o" >4:o型</option><option value="qita">5:其他血型</option></select></td> <td align="right">婚姻状况</td><td><select  name="sy"> <option value="wh" selected>1:未婚</option><option value="yh" >2:已婚</option><option value="so">3:丧偶</option><option value="lh" >4:离婚</option><option value="qt4" >5:其他</option></select></td></tr>
+
+
+<tr><td align="right">部门 </td><td><input type="text" name="jguan"></td> <td align="right">出生地 </td><td><input type="text" name="ssheng"></td> <td align="right">用户所在地</td><td><input type="text" name="yhu"></td></tr>
+
+<tr><td align="right"> 最高学历</td><td><select  name="zgao"> <option value="gzh" selected>1:高中及以下</option><option value="dzhua">2:大专</option><option value="ben" >3:本科</option><option value="yanj" >4:研究生</option></select></td> <td align="right">最高学位</td><td><select  name="zxuewei"> <option value="wx" selected>1:无学位</option><option value="xshi" >2:学士</option><option value="shuangxs">3:双学士</option><option value="sshi" >4:硕士</option><option value="bshi" >5:博士</option><option value="shh" >6:博士后</option></select></td> <td align="right">毕业院校 </td><td><input type="text" name="bye"></td></tr>
+
+
+<tr><td align="right">所学专业 </td><td><input type="text" name="sxue"></td><td align="right">毕业日期</td><td><input type="text" name="bri"></td><td align="right">岗位</td><td><input type="text" name="sxue"></td></tr>
+
+</table>
+</div>
+
+<table>
+
+
+</table>
+
+</center>
+
+</form>
+</body>
+</html>

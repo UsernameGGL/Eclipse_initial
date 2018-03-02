@@ -1,0 +1,166 @@
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/tn_css.css" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+<title>试用期管理</title>
+</head>
+<script language=JavaScript src="js/script.js"></script>
+<body topmargin="0" bottommargin="0">
+
+<form name="form1">
+当前位置:已转正员工信息查询<br>
+<div align="right"><a href="Tn_ProbationInformation.html">查询试用期员工列表</a></div>
+
+
+<form  action="Tn_ProbationSearch.html" method="post">
+  <table  width="100%" align="center"  >
+  <tr>
+    <td align="center" >
+	<span  style="cursor:hand" onClick="dispTab('showselect','show','hidden',openitem)">试用期查询 
+		<span id="hidden">[点击此处查询试用期查询]</span>
+		<span  id="show" style="display:none">[点击此处隐藏员试用期查询]</span>
+	</span></td>
+  </tr>
+  
+  <table align="center"  id="showselect" class="border" style="display:none" >
+   <tr class="title" > 
+
+<tr colspan="4"><td>员工编号：</td><td><input name="tn_number" type="text" /></td><td>员工姓名：</td><td><input name="tn_name" type="text" /></tr>
+<tr colspan="4"><td>部门编号：</td><td><input name="tn_number" type="text" /></td><td>部门名称：</td><td><input name="tn_departmentName " type="text" /></tr>
+<tr colspan="4"><td>开始日期：</td><td><input name="tn_beginData" type="text" /></td><td>结束日期：</td><td><input name="tn_overData" type="text" /></tr>
+
+
+  <tr colspan="4"><td></td><td><input name="OK" type="submit"  class="button"  value="查询"/>
+<input name="reset" type="reset"  class="button"/></td></tr>
+
+</table><br>
+
+<table  width="100%" align="center" class="border"  style=" border-color:#000000">
+	<tr  colspan="6">
+    <td >员工编号</td>
+    <td >员工姓名</td>
+    <td >部门编号</td>
+    <td >部门名称</td>
+    <td >开始日期</td>
+    <td >结束日期</td>
+  </tr>
+  <tr colspan="6">
+    
+    <td>110021</td>
+    <td>张三</td>
+    <td>110023</td>
+    <td>软件开发</td>
+     <td>2007-07-01</td>
+    <td>2007-08-01</td> 
+  </tr>
+    <tr colspan="6">
+    
+    <td>110021</td>
+    <td>张三</td>
+    <td>110023</td>
+    <td>软件开发</td>
+     <td>2007-07-01</td>
+    <td>2007-08-01</td> 
+  </tr>
+	
+</table>
+<table>
+	<tr>
+		<td height=13 colspan="6"  align="center">&nbsp; <br>&nbsp;
+		</td>
+	</tr><tr><td valign="top"><br></td><td valign="top"><br></td><td valign="top"><br></td><td valign="top"><br></td><td valign="top"><br></td><td valign="top"><br></td></tr>
+</table>
+
+</form>
+</body>
+</html:html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+	function confirmDel(){
+		confirm("确认删除该实施经理?")
+	}
+	function addProject(){
+		url="editImplementation.html"
+		window.location.assign(url);
+	}
+	function go_back(){
+		url="../index.html"
+		window.location.assign(url);
+	}
+	
+	function confirmDelSelected(){
+		checkSelectByHintT(form1.customerIDs,"复选框未定义","请选择要删除实施经理","确定要删除");
+		url="listImplementationM.html"
+		window.location.assign(url);
+	}
+	function edit(){
+		url="searchImplementation.html"
+		window.location.assign(url);
+	}
+
+
+	function checkSelectByHintT(checksbox,noDefineHint,noSelectHint,areyousure){
+	var result = checkSelect(checksbox)
+	if( result == 1)
+	  alert(noDefineHint);
+	else if( result ==2 )
+	  alert(noSelectHint);
+	else if( result ==0 )
+		confirm(areyousure);
+	return result;
+}
+
+/*
+ *  检查checksbox是否有复选框被选中，如果checksbox没定义则返回1,如果没选中则并返回2。
+ *  如果有则返回0。
+ */
+function checkSelect(checksbox){
+	if( checksbox == undefined || checksbox==null )
+		return 1;
+	if( checksbox.length == undefined ){
+		if( checksbox.checked )
+		
+			return 0;
+		else
+			return 2;
+	}else{
+		var i;
+		for(i=0;i<checksbox.length;i++)
+		   if( checksbox[i].checked )
+		   
+			  return 0;
+		return 2;
+	}
+}
+	
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+

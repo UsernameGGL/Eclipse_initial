@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>java_web_jsp_tomcat</display-name>
+  <servlet>
+      <servlet-name>com.hms.servlet.Cheat_times</servlet-name>
+      <servlet-class>com.hms.servlet.Cheat_times</servlet-class>
+ 	  <init-param>
+ 	      <param-name>param_1</param-name>
+ 	      <param-value>9999</param-value>
+ 	  </init-param>
+ 	  <init-param>
+ 	      <param-name>param_2</param-name>
+ 	      <param-value>1111</param-value>
+ 	  </init-param>
+ 	  <init-param>
+ 	      <param-name>param_3</param-name>
+ 	      <param-value>3333</param-value>
+ 	  </init-param>
+ 	  <init-param>
+ 	      <param-name>param_4</param-name>
+ 	      <param-value>4444</param-value>
+ 	  </init-param>
+  </servlet>
+  <servlet>
+      <servlet-name>com.hms.servlet.RegServlet</servlet-name>
+      <servlet-class>com.hms.servlet.RegServlet</servlet-class>
+  </servlet>
+  <servlet>
+      <servlet-name>com.hms.servlet.addPersonServlet</servlet-name>
+      <servlet-class>com.hms.servlet.addPersonServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>com.hms.servlet.Cheat_times</servlet-name>
+      <url-pattern>/d.servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	  <servlet-name>com.hms.servlet.RegServlet</servlet-name>
+      <url-pattern>/reg.servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+      <servlet-name>com.hms.servlet.addPersonServlet</servlet-name>
+      <url-pattern>/ap.servlet</url-pattern>
+      
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

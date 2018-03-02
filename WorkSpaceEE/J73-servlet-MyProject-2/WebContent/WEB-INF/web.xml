@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>J73-servlet-MyProject-2</display-name>
+ 
+  <!-- 登录的映射处理信息 --> 
+  <servlet>
+  	<servlet-name>com.kms.servlet.LoginServlet</servlet-name>
+  	<servlet-class>com.kms.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>com.kms.servlet.LoginServlet</servlet-name>
+	<url-pattern>/log/login.servlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 退出的映射处理信息 --> 
+  <servlet>
+  	<servlet-name>com.kms.servlet.LogoutServlet</servlet-name>
+  	<servlet-class>com.kms.servlet.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>com.kms.servlet.LogoutServlet</servlet-name>
+	<url-pattern>/log/logout.servlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 注册的映射处理信息 --> 
+  <servlet>
+  	<servlet-name>com.kms.servlet.RegServlet</servlet-name>
+  	<servlet-class>com.kms.servlet.RegServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>com.kms.servlet.RegServlet</servlet-name>
+	<url-pattern>/log/reg.servlet</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

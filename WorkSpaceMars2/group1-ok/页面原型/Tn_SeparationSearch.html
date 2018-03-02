@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" href="css/tn_css.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+</head>
+<script language=JavaScript src="js/script.js"></script>
+<body>
+<div id="container">
+<div id="content">
+<div id="content1">
+当前位置:已离职人员查询
+<div align="right"><a href="Tn_SeparationSearch1.html">点击此处：查询在职人员信息</a></div>
+		<form name="" action="" method="post">
+		<table  width="100%" align="center">
+  <tr>
+    <td align="center" >
+	<span  style="cursor:hand" onClick="dispTab('showselect','show','hidden',openitem)">离职员工查询 
+		<span id="hidden">[点击此处查询离职员工信息]</span>
+		<span  id="show"   style="display:none">[点击此处隐藏离职员工信息]</span>
+	</span></td>
+  </tr>
+  <table align="center" id="showselect" style="display:none" class="border">
+ 	<tr align="right">
+	<td>&nbsp;&nbsp;员工编号：</td>
+	<td><input type="text" name=""></td>
+	<td class="rowAlternateB">&nbsp;&nbsp;员工姓名：</td>
+	<td><input name="text" type="text"></td>
+ 	</tr>
+	
+		<tr align="right">
+	<td>&nbsp;&nbsp;岗位名称：</td>
+	<td><input type="text" name=""></td>
+	<td class="rowAlternateB">&nbsp;部门名称：</td>
+	<td><input type="text" name=""></td>
+	</tr>
+	 	<tr align="right">
+	<td>&nbsp;&nbsp;开始日期：</td>
+	<td><input type="text" name=""></td>
+	<td class="rowAlternateB">&nbsp;&nbsp;结束日期：</td>
+	<td><input name="text" type="text"></td>
+ 	</tr>
+ 	<tr align="right">
+	<td>&nbsp;&nbsp;离职类型：</td>
+	<td>
+	 <select>
+	   <option value="tn_null" selected="selected">1.不限</option>
+	   <option value="tn_initiative ">2.主动辞职</option>
+	   <option value="tn_dismissa">3.辞退</option>
+	   <option value="tn_Retired">4.退休</option>
+	   <option value="tn_Dismissed">5.开除</option>
+	   <option value="tn_pass">6.试用期未通过</option>
+	</select>
+	</td>
+	<td></td>
+	<td></td>
+ 	</tr>
+	
+	<tr>
+	<td  colspan="4" align="center"><input type="button" class="button" value="查询" onClick="search();"></td>
+	</tr>
+  </table>
+
+  </form>
+  <table width="100%"align="center" class="border">
+	<tr>
+	  
+	  <td><div align="left">&nbsp;&nbsp;员工编号</div></td>
+		<td><div align="center">员工姓名</div></td>
+		<td><div align="center">部门名称</div></td>
+		<td><div align="center">岗位名称</div></td>
+		<td><div align="center">性别</div></td>
+		<td><div align="center">离职原因</div></td>
+		
+	</tr>
+	<tr>
+		
+	  <td ><div align="left">&nbsp;&nbsp;C20910</div></td>				
+        <td><div align="center">疾风</div></td>
+		<td><div align="center">技术开发部</div></td>
+		<td><div align="center">软件工程师</div></td>
+		<td><div align="center">男</div></td>
+		<td><div align="center">主动辞职</div></td>
+	</tr>
+	<tr>
+		
+	  <td ><div align="left">&nbsp;&nbsp;C20910</div></td>			
+                <td><div align="center">疾风</div></td>
+		<td><div align="center">技术开发部</div></td>
+		<td><div align="center">软件工程师</div></td>
+		<td><div align="center">男</div></td>
+		<td><div align="center">辞退</div></td>
+	</tr>
+	<tr>
+		
+	  <td ><div align="left">&nbsp;&nbsp;C20910</div></td>			
+                <td><div align="center">疾风</div></td>
+		<td><div align="center">技术开发部</div></td>
+		<td><div align="center">软件工程师</div></td>
+		<td><div align="center">男</div></td>
+		<td><div align="center">开除</div></td>
+	</tr>
+	<tr>
+		
+	  <td ><div align="left">&nbsp;&nbsp;C20910</div></td>			
+                <td><div align="center">疾风</div></td>
+		<td><div align="center">技术开发部</div></td>
+		<td><div align="center">软件工程师</div></td>
+		<td><div align="center">男</div></td>
+		<td><div align="center">退休</div></td>
+	</tr>
+</table>
+</div>
+</body>
+</html>

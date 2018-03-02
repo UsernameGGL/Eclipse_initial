@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- constant 定义项目常量 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<constant name="struts.devMode" value="false" />
+	
+	<!-- 对admin中action的相应 -->
+	<include file="./com/kms/cfg/struts-admin.xml"></include>
+
+	<!-- 对dept中action的相应 -->
+	<include file="./com/kms/cfg/struts-dept.xml"></include>
+	<!-- 对position中action的相应 -->
+	<include file="./com/kms/cfg/struts-position.xml"></include>
+	<!-- 对workerInfo中action的相应 -->
+	<include file="./com/kms/cfg/struts-workerInfo.xml"></include>
+	<!-- 对jobInfo中action的响应 -->
+	<include file="./com/kms/cfg/struts-jobInfo.xml"></include>
+	<!-- 对probation中的action的响应 -->
+	<include file="./com/kms/cfg/struts-probation.xml"></include>
+	
+	<!-- 对report中的action的响应 -->
+	<include file="./com/kms/cfg/struts-report.xml"></include>
+	
+	<!-- 对change中的action的响应 -->
+	<include file="./com/kms/cfg/struts-change.xml"></include>
+	
+</struts>

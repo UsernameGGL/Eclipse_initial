@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<!--为工程引入dtd文件，编写代码做自动补齐功能  -->
+<struts><!--struts标签是文件的根标签  -->
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="true" />
+    <package name="_person" namespace="/person" extends="struts-default">
+        <action name="person_*" class="com.kms.action.PersonAction" method="{1}">
+            <result name="list">/person/listpersons.jsp</result>
+        </action>
+        <action name="role_*" class="com.kms.action.PersonAction" method="{1}">
+            <result name="list">/person/listroles.jsp</result>
+        </action>
+    </package>
+</struts>

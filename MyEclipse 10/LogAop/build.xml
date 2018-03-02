@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="LogAop">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="C:/Users/dyk/AppData/Local/MyEclipse/MyEclipse 10"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="Spring 3.0 Core Libraries.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/98/1/.cp/data/3.0/lib/core/org.springframework.core-3.0.5.RELEASE.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/98/1/.cp/data/3.0/lib/core/org.springframework.context-3.0.5.RELEASE.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/98/1/.cp/data/3.0/lib/core/org.springframework.beans-3.0.5.RELEASE.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/98/1/.cp/data/3.0/lib/core/org.springframework.asm-3.0.5.RELEASE.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/98/1/.cp/data/3.0/lib/core/com.springsource.org.apache.log4j-1.2.15.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/98/1/.cp/data/3.0/lib/core/com.springsource.org.apache.commons.logging-1.1.1.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/98/1/.cp/data/3.0/lib/core/org.springframework.expression-3.0.5.RELEASE.jar"/>
+    </path>
+    <path id="Spring 3.0 AOP Libraries.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/98/1/.cp/data/3.0/lib/aop/org.springframework.aop-3.0.5.RELEASE.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/98/1/.cp/data/3.0/lib/aop/com.springsource.org.aopalliance-1.0.0.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/98/1/.cp/data/3.0/lib/aop/com.springsource.org.aspectj.weaver-1.6.8.RELEASE.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/98/1/.cp/data/3.0/lib/aop/com.springsource.net.sf.cglib-2.2.0.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/98/1/.cp/data/3.0/lib/aop/org.springframework.aspects-3.0.5.RELEASE.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/98/1/.cp/data/3.0/lib/aop/org.springframework.instrument-3.0.5.RELEASE.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/configuration/org.eclipse.osgi/bundles/98/1/.cp/data/3.0/lib/aop/org.springframework.instrument.tomcat-3.0.5.RELEASE.jar"/>
+    </path>
+    <path id="LogAop.classpath">
+        <pathelement location="bin"/>
+        <path refid="Spring 3.0 Core Libraries.libraryclasspath"/>
+        <path refid="Spring 3.0 AOP Libraries.libraryclasspath"/>
+        <pathelement location="../../../jar/log4j-1.2.8.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="LogAop.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+</project>

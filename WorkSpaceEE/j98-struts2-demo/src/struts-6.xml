@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<!--为工程引入dtd文件，编写代码做自动补齐功能  -->
+<struts><!--struts标签是文件的根标签  -->
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="true" />
+    <!-- /Login.jsp -->
+    <!-- http://localhost:8080/j98-struts2-demo/admin/role_del.action -->
+    <package name="_admin" namespace="/admin" extends="struts-default">
+        <action name="rf" class="com.kms.action.RoleFormAction">
+            <result>/ok.jsp</result>
+        </action>
+        <action name="role_*" class="com.kms.action.RoleDmiAction" method="{1}">
+            <result>/ok.jsp</result>
+        </action>
+        <!-- 动态方法调用时页面名由页面名和方法名构成，actionname = name + "!" +method + ".action";
+        <action name="role" class="com.kms.action.RoleDmiAction">
+            <result>/ok.jsp</result>
+        </action>
+         -->
+    </package>
+    <package name="url" namespace="/a/b/c" extends="struts-default">
+        <action name="url" class="com.kms.action.UrlAction">
+	        <result>/ok.jsp</result>
+	    </action>
+	</package>
+	<package name="default" namespace="/" extends="struts-default">
+	    <action name="url" class="com.kms.action.UrlAction">
+	        <result>/ok.jsp</result>
+	    </action>
+	    <action name="demoest" class="com.kms.action.DemoExtAction">
+	        <result>/ok.jsp</result>
+	    </action>
+	    <action name="demoimpl" class="com.kms.action.DemoImplAction">
+	        <result>/ok.jsp</result>
+	    </action>
+	    <action name="demo" class="com.kms.action.DemoAction" method="execute">
+	        <result name="success">/ok.jsp</result>
+	    </action>
+	</package>
+</struts>

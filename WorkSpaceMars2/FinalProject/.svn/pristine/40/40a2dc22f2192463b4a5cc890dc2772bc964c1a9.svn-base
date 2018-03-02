@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>职位申请</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	
+
+  
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="css/superfish.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+		<div id="fh5co-header">
+			<div class="top">
+				<div class="container">
+					<span> <a href="#"><i>@</i> info@freehtml5.co</a></span>
+					<span> <a href="tel://+12345678910"><i class="icon-mobile3"></i> 123 4567 8910</a></span>
+				</div>
+			</div>
+			<!-- end:top -->
+			<header id="fh5co-header-section">
+				<div class="container">
+					<div class="nav-header">
+						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+						<h1 id="fh5co-logo"><a href="index.html">Welcome</a></h1>
+						<!-- START #fh5co-menu-wrap -->
+					<nav id="fh5co-menu-wrap" role="navigation">
+						<ul class="sf-menu" id="fh5co-primary-menu">
+							<li>
+								<a href="index.html">公司主页</a>
+							</li>
+							<li>
+								<a href="portfolio.html">公司简介</a>
+							</li>
+							<li>
+								<a href="services.html" class="fh5co-sub-ddown">部门简介</a>
+								 <ul class="fh5co-sub-menu">
+								 	<li><a href="left-sidebar.html">Web Development</a></li>
+								 	<li><a href="right-sidebar.html">Branding &amp; Identity</a></li>
+									<li>
+										<a href="#" class="fh5co-sub-ddown">Free HTML5</a>
+										<ul class="fh5co-sub-menu">
+											<li><a href="#/preview/?item=build-free-html5-bootstrap-template" target="_blank">Build</a></li>
+											<li><a href="#/preview/?item=work-free-html5-template-bootstrap" target="_blank">Work</a></li>
+											<li><a href="#/preview/?item=light-free-html5-template-bootstrap" target="_blank">Light</a></li>
+											<li><a href="#/preview/?item=relic-free-html5-template-using-bootstrap" target="_blank">Relic</a></li>
+											<li><a href="#/preview/?item=display-free-html5-template-using-bootstrap" target="_blank">Display</a></li>
+											<li><a href="#/preview/?item=sprint-free-html5-template-bootstrap" target="_blank">Sprint</a></li>
+										</ul>
+									</li>
+									<li><a href="#">UI Animation</a></li>
+									<li><a href="#">Copywriting</a></li>
+									<li><a href="#">Photography</a></li> 
+								</ul>
+							</li>
+							<li><a href="about.html">岗位简介</a></li>
+							<li class="active"><a href="apply.html">求职申请</a></li>
+							<li ><a href="contact.html">登录</a></li>
+						</ul>
+					</nav>
+					</div>
+				</div>
+			</header>
+			
+		</div>
+		
+		
+		<div class="fh5co-hero">
+			<div class="fh5co-overlay"></div>
+			<div class="fh5co-cover text-center" style="background-image: url(images/work-1.jpg);">
+				<div class="desc animate-box">
+					<h2>职位申请</h2>
+					<span>Lovely Crafted by <a href="#" target="_blank" class="fh5co-site-name">FREEHTML5.co</a></span>
+				</div>
+			</div>
+
+		</div>
+		<!-- 申请表单 -->
+		 <script type="text/javascript">
+function checkform(){
+	document.getElementById("form").onsubmit=function(){
+		if($("#name").val()==""||$("#phone").val()==""||$("#job").val()==""||$("#job option:selected").val()=='请选择您要申请的岗位*'||$('#identify').val()==""){
+			alert('带*为必填选项');
+			return false;
+		}
+		if($("#identify").val().length<18){
+			alert('身份证号至少为18位，请重新输入');
+			return false;
+		}
+		var info=$("#name").val()+$('#age').val()+$("#phone").val()+$("#job").val()+$('#identify').val()+$('#户籍').val();
+		
+		var flag=info.indexOf('@')>=0||info.indexOf('!')>=0||info.indexOf('#')>=0||info.indexOf('$')>=0||info.indexOf('%')>=0||info.indexOf('^')>=0||info.indexOf('&')>=0||info.indexOf('*')>=0||info.indexOf('(')>=0||info.indexOf(')')>=0||info.indexOf('<')>=0||info.indexOf('>')>=0||info.indexOf('/')>=0||info.indexOf('\\')>=0;
+		
+		if(flag){
+			alert('请输入正确的信息');
+			return false
+		}
+		return true;
+	}
+}
+window.onload=checkform;
+</script>
+
+		
+		<form class="form-horizontal" id="form" role="form" action="../probation/apply_add.action" method="post" >
+ <div class="form-group" style="padding: 40px 180px 10px;">
+    <label for="名字" class="col-sm-2 control-label"><span class="glyphicon glyphicon-user"></span></label>
+    <div class="col-sm-10">
+    <input type="text" class="form-control" id="name" placeholder="请输入您的姓名*" name="anm"></div></div>
+    
+    
+<div class="form-group"style="padding: 5px 180px 10px;">
+    <label for="年龄" class="col-sm-2 control-label"><span class="glyphicon glyphicon-heart"></span></label>
+    <div class="col-sm-10">
+    <input type="text" class="form-control" id="age" placeholder="请输入您的年龄"name="aage"></div></div>
+    
+  <div class="form-group"style="padding: 5px 180px 10px;">
+    <label for="性别" class="col-sm-2 control-label"><span class="glyphicon glyphicon-star"></span></label>
+    <div class="col-sm-10">
+    <input type="radio" name="asex" id="sex" value="男" checked>男&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="asex" id="sex" value="女" >女</div></div>
+      
+<div class="form-group"style="padding: 5px 180px 10px;">
+    <label for="身份证号" class="col-sm-2 control-label"> <span class="glyphicon glyphicon-flash"></span></label>
+    <div class="col-sm-10">
+    <input type="text" class="form-control" id="identify" placeholder="请输入您的身份证号*"name="aid"></div></div>
+    
+<div class="form-group"style="padding: 5px 180px 10px;">
+    <label for="联系电话" class="col-sm-2 control-label"> <span class="glyphicon glyphicon-phone-alt"></span></label>
+    <div class="col-sm-10">
+    <input type="number" class="form-control" id="phone" placeholder="请输入您的联系电话*"name="atel"></div></div>
+    
+<div class="form-group"style="padding: 5px 180px 10px;">
+    <label for="户籍" class="col-sm-2 control-label"><span class="glyphicon glyphicon-home"></span></label>
+    <div class="col-sm-10">
+    <input type="text" class="form-control" id="户籍" placeholder="请输入您的户籍信息"name="aloc"></div></div>
+    
+<div class="form-group"style="padding: 5px 180px 10px;">
+  <label for="民族" class="col-sm-2 control-label"><span class="glyphicon glyphicon-flag"></span></label>
+<div class="col-sm-10">
+<select class="form-control"name="ana"><option>请选择您的民族</option>
+<option>汉族</option>
+<option>回族</option>
+<option>其他</option>
+</select>
+</div>
+</div>
+
+<div class="form-group"style="padding: 5px 180px 10px;">
+  <label for="学历" class="col-sm-2 control-label"><span class="glyphicon glyphicon-wrench"></span></label>
+  <div class="col-sm-10">
+  <input type="radio" name="aedu" id="学历" value="本科" checked>本科&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="radio" name="aedu" id="学历" value="大专" >大专&nbsp;&nbsp;&nbsp;&nbsp;
+   <input type="radio" name="aedu" id="学历" value="硕士研究生" >硕士研究生&nbsp;&nbsp;&nbsp;&nbsp;
+   <input type="radio" name="aedu" id="学历" value="博士研究生" >博士研究生</div></div>
+   
+<div class="form-group"style="padding: 5px 180px 10px;">
+  <label for="申请岗位" class="col-sm-2 control-label"> <span class="glyphicon glyphicon-briefcase"></span></label>
+  <div class="col-sm-10">
+  <select class="form-control" name="apos" id="job">
+  <option>请选择您要申请的岗位*</option>
+  <option>部门经理</option>
+  <option>高级职工</option>
+  <option>普通职工</option>
+  </select>
+  </div>
+  </div>
+  <div class="form-group" >
+  <div class="col-sm-offset-2 col-sm-10" style="padding-left:300px;" >
+  <button type="submit" class="btn btn-default">申请</button></div></div>
+</form>
+		
+		
+		<!-- fh5co-work-section -->
+		<div id="fh5co-start-project-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center animate-box">
+						<h2>Start a Project</h2>
+						<a href="#" class="btn btn-primary">Get in Touch</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- START a project -->
+
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<p>Copyright 2016 Free Html5 <a href="#">Render</a>. All Rights Reserved. <br>More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a> / Demo Images: <a href="#">Unsplash</a></p>
+						</div>
+						<div class="col-md-6">
+							<ul class="footer-menu">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Portfolio</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+
+	</div>
+	<!-- END fh5co-page -->
+
+	</div>
+	<!-- END fh5co-wrapper -->
+
+	<!-- jQuery -->
+
+
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Superfish -->
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.js"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+

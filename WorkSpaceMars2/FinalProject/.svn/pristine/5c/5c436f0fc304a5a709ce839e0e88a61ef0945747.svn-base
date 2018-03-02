@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>岗位简介 </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	
+
+  
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="css/superfish.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+		<div id="fh5co-header">
+			<div class="top">
+				<div class="container">
+					<span> <a href="#"><i>@</i> info@freehtml5.co</a></span>
+					<span> <a href="tel://+12345678910"><i class="icon-mobile3"></i> 123 4567 8910</a></span>
+				</div>
+			</div>
+			<!-- end:top -->
+			<header id="fh5co-header-section">
+				<div class="container">
+					<div class="nav-header">
+						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+						<h1 id="fh5co-logo"><a href="index.html">Welcome</a></h1>
+						<!-- START #fh5co-menu-wrap -->
+					<nav id="fh5co-menu-wrap" role="navigation">
+						<ul class="sf-menu" id="fh5co-primary-menu">
+							<li>
+								<a href="index.html">公司主页</a>
+							</li>
+							<li>
+								<a href="portfolio.html">公司简介</a>
+							</li>
+							<li>
+								<a href="services.html" class="fh5co-sub-ddown">部门简介</a>
+							</li>
+							<li class="active"><a href="about.html">岗位简介</a></li>
+							<li><a href="apply.html">求职申请</a></li>
+							<li><a href="login.html">登录</a></li>
+						</ul>
+					</nav>
+					</div>
+				</div>
+			</header>
+			
+		</div>
+		
+		
+		<div class="fh5co-hero">
+			<div class="fh5co-overlay"></div>
+			<div class="fh5co-cover text-center" style="background-image: url(images/work-1.jpg);">
+				<div class="desc animate-box">
+					<h2>岗位简介</h2>
+					<span>Lovely Crafted by <a href="#" target="_blank" class="fh5co-site-name">FREEHTML5.co</a></span>
+				</div>
+			</div>
+
+		</div>
+		<!-- END: header -->
+		
+		<div id="fh5co-about" class="border-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 animate-box">
+						<figure>
+							<img src="images/blog-1.jpg" alt="Free HTML5 Bootstrap Template by FREEHTML5.co" class="img-responsive">
+						</figure>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 animate-box">
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+					</div>
+					<div class="col-md-6 animate-box">
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="fh5co-content-section"  class="border-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<div class="fh5co-testimonial text-center animate-box">
+							<h2>What Others Think</h2>
+							<figure>
+								<img src="images/user-1.jpg" alt="user">
+							</figure>
+							<blockquote>
+								<p>“Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn’t really do it, they just saw something. It seemed obvious to them after a while.”</p>
+							</blockquote>
+							<span>Steve Jobs, Apple Inc.</span>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<div class="fh5co-about-us animate-box">
+							<h2 class="text-center">Our Building</h2>
+							<img src="images/about-image.jpg" alt="About Us">
+							<p>Far far away, behind the word mountains, far f`rom the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="fh5co-services">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<div class="services animate-box">
+							<span><i class="icon-browser"></i></span>
+							<h3>部门经理</h3>
+							<p>部门经理是协调部门内和企业内的资源调配的管理人员,主要职责是为部门的整体业绩负责.
+               		 部门经理必须要处理好以下五种关系：管理者和被管理者的关系;分内工作与额外工作的关系;批评与鼓励的关系。
+               		 付出与回报的关系;成效与成长的关系;</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="services animate-box">
+							<span><i class="icon-mobile"></i></span>
+							<h3>高级职工</h3>
+							<p>高级管理人员是指公司的经理、副经理、财务负责人、上市公司董事会秘书和公司章程规定的其他人员.
+		                根据公司法的规定，有下列情形之一的，不得担任公司的董事、监事、高级管理人员:
+		                无民事行为能力或者限制民事行为能力;
+		   		因犯有贪污、贿赂、侵占财产、挪用财产罪或者破坏社会经济秩序罪，被判处刑罚，执行期满未逾5年，或者因犯罪被剥夺政治权利，执行期满未逾5年;</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="services animate-box">
+							<span><i class="icon-tools"></i></span>
+							<h3>普通职工</h3>
+							<p>职责：以提高客户需求为根本;坚持以客户为关注焦点;加强学习，努力提高技术水平和业务素质;
+                	踏实肯干，端正态度;协同工作。</p>
+						</div>
+					</div>
+					<!-- <div class="col-md-4 col-sm-4">
+						<div class="services animate-box">
+							<span><i class="icon-video"></i></span>
+							<h3>Video Editing</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="services animate-box">
+							<span><i class="icon-search"></i></span>
+							<h3>SEO Ranking</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="services animate-box">
+							<span><i class="icon-cloud"></i></span>
+							<h3>Cloud Based Apps</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+		
+		<!-- fh5co-work-section -->
+		<div id="fh5co-start-project-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center animate-box">
+						<h2>Start a Project</h2>
+						<a href="#" class="btn btn-primary">Get in Touch</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- START a project -->
+
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<p>Copyright 2016 Free Html5 <a href="#">Render</a>. All Rights Reserved. <br>More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a> / Demo Images: <a href="#">Unsplash</a></p>
+						</div>
+						<div class="col-md-6">
+							<ul class="footer-menu">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Portfolio</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+
+	</div>
+	<!-- END fh5co-page -->
+
+	</div>
+	<!-- END fh5co-wrapper -->
+
+	<!-- jQuery -->
+
+
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Superfish -->
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.js"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 对在职信息改查的Action -->
+	<package name="_jobInfo" namespace="/administratorsView" extends="struts-default">
+		<action name="jobInfo_*" class="com.kms.action.JobInfoAction" method="{1}">
+			<result name="list">/NewAdmView/moveManager.jsp</result>
+			<result name="quit"></result>	<!-- 员工离职处理 -->
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="login" class="com.kms.action.LoginAction" method="login" >
+			<result name="root">/NewAdmView/index.html</result>			<!-- 管理员登录 -->
+			<result name="normal">../M.jsp</result>			<!-- 普通员工调动 -->
+			<result name="error">../companyEntry/loginError.jsp</result>			<!-- 登录信息与数据库信息不匹配 -->
+		</action>
+	</package>
+	
+</struts>

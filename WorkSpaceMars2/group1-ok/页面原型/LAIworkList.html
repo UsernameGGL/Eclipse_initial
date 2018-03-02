@@ -1,0 +1,124 @@
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/tn_css.css" />
+<title>岗位基本信息</title>
+</head>
+<script language=JavaScript src="js/script.js"></script>
+<body topmargin="0" bottommargin="0">
+<form name="form1">
+
+<p>当前位置:岗位基本信息</p>
+<form name="" action="" method="post">
+  <table  width="100%" align="center">
+  <tr>
+    <td align="center" >
+	<span  style="cursor:hand" onClick="dispTab('showselect','show','hidden',openitem)">岗位信息查询<span id="hidden"  color:#0088CC">[已隐藏]</span>
+	  <span  id="show"   style="display:none" >[已显示]</span>	</span></td>
+  </tr>
+  
+  <table  align="center" style="display:none" id="showselect" class="border">
+
+ 	<tr align="right">
+	<td>&nbsp;&nbsp;岗位编号：</td>
+	<td><input type="text" name=""></td>
+	<td class="rowAlternateB">&nbsp;&nbsp;岗位名称：</td>
+	<td><input name="text" type="text"></td>
+ 	</tr>
+	
+	<tr align="right">
+	<td>&nbsp;&nbsp;岗位类型：</td>
+	<td><select align="left">
+		  <option selected>1.不限</option>
+			<option>2.管理</option>
+			<option>3.技术</option>
+			<option>4.营销</option>		
+		</select></td>
+    <td>&nbsp;&nbsp;</td>
+	<td>&nbsp;&nbsp;</td>
+	</tr>
+	
+	<tr>
+	<td  colspan="4" align="center">
+	<input type="button" class="button" value="查询" onClick="checToCRHir()">
+	<input type=reset class="button"  value=" 重新填写 "></td>
+	</tr>
+  </table>
+  </table>
+</form>
+
+<table width="100%" cellspacing="0" class="border">
+	<tr >
+	  
+		<td><div align="center">岗位编号</div></td>
+		<td><div align="center">岗位名称</div></td>
+		<td><div align="center">类型</div></td>
+		<td><div align="center">岗位编制</div></td>
+		<td><div align="center">在岗人数</div></td>
+		<td><div align="center">员工</div></td>
+		<td><div align="center">删除</div></td>
+		
+	</tr>
+	<tr >
+		
+		<td class="rowAlternateB"><div align="center">C20910</div></td>				
+        <td><div align="center"><a href="LAIeditWork.html">软件设计师</a></div></td>
+		<td><div align="center">技术</div></td>
+		<td><div align="center">100</div></td>
+		<td><div align="center">80</div></td>
+		<td><div align="center"><a href="LAIapartEmployee.html">员工</a></div></td>
+		<td><div align="center"><a href="#">删除</a></div></td>
+	</tr>
+	<tr >
+		
+		<td class="rowAlternateB"><div align="center">C20911</div></td>				
+        <td><div align="center"><a href="#">系统分析师</a></div></td>
+		<td><div align="center">技术</div></td>
+		<td><div align="center">50</div></td>
+		<td><div align="center">20</div></td>
+		<td><div align="center"><a href="#">员工</a></div></td>
+		<td><div align="center"><a href="#">删除</a></div></td>
+	</tr>
+	<tr >
+		
+		<td class="rowAlternateB"><div align="center">C20912</div></td>				
+        <td><div align="center"><a href="#">销售员</a></div></td>
+		<td><div align="center">营销</div></td>
+		<td><div align="center">100</div></td>
+		<td><div align="center">80</div></td>
+		<td><div align="center"><a href="#">员工</a></div></td>
+		<td><div align="center"><a href="#">删除</a></div></td>
+	</tr>
+	<tr >
+		
+		<td class="rowAlternateB"><div align="center">C20913</div></td>				
+        <td><div align="center"><a href="#">市场分析师</a></div></td>
+		<td><div align="center">市场</div></td>
+		<td><div align="center">100</div></td>
+		<td><div align="center">80</div></td>
+		<td><div align="center"><a href="#">员工</a></div></td>
+		<td><div align="center"><a href="#">删除</a></div></td>
+	</tr>
+</table>
+<table>
+	<tr>
+	  <td ><INPUT type="button" class="button"  value="增加" onClick="addWork();">
+	  </td>
+	</tr>
+</table>
+
+</form>
+</body>
+</html:html>
+<script>
+	
+	function addWork(){
+		url="LAIaddWork.html"
+		window.location.assign(url);
+	}
+	function checToHirHty(){
+		url="listCRHir.html"
+		window.location.assign(url);
+	}
+	
+</script>

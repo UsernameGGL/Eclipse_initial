@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+          
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+      
+
+<struts-config>
+<!-- This is formbeans -->
+<form-beans>
+	<form-bean name="EmployeeActionForm"	type="com.neusoft.employeemanage.form.EmployeeActionForm" />
+	<form-bean name="DeptForm" type="com.neusoft.deptmanage.form.DeptForm"/>
+	<form-bean name="DomiForm" type="com.neusoft.domimanage.form.DomiForm"/>
+	<form-bean name="ProbationForm" type="com.neusoft.probmanage.form.ProbationForm"/>
+	<form-bean name="DeptChangeForm" type="com.neusoft.deptchangemanage.form.DeptChangeForm"/>
+	<form-bean name="jobForm"	type="com.neusoft.jobmanage.form.JobForm" />
+	<form-bean name="jobChForm"	type="com.neusoft.jobchangemanage.form.JobChForm" />
+</form-beans>
+
+<!-- maked by Xing qiushi -->
+<action-mappings>
+<action path="/EmployeeActon"
+        type="com.neusoft.employeemanage.action.EmployeeAction"  
+        name="EmployeeActionForm"
+        scope="request" 
+		parameter="method">
+    <forward name="Addemployee" path="/jsp/employeemanage/Addemployee.jsp"/>
+    <forward name="employCenter" path="/jsp/employeemanage/employeecenter.jsp"/>
+    <forward name="employee1" path="/jsp/employeemanage/employee1.jsp"/>
+    <forward name="jobemployCenter" path="/jsp/jobmanage/LAIapartEmployee.jsp"/>
+    
+</action>
+
+<!-- maked by Lv zhengxia -->
+<action path="/dept" 
+        name="DeptForm"
+        scope="request" 
+        type="com.neusoft.deptmanage.action.DeptAction"
+        parameter="method"
+        attribute="dept">
+     <forward name="success" path="/jsp/deptmanage/dept_list.jsp"/>
+     <forward name="add" path="/jsp/deptmanage/dept_add.jsp"/>
+     <forward name="edit" path="/jsp/deptmanage/dept_edit.jsp"/>
+     <forward name="list" path="/jsp/deptmanage/deptempl_list.jsp"/>
+</action>
+
+<!-- maked by dabingyilong -->
+<action path="/DomiAction"
+        name="DomiForm"
+        scope="request"
+        type="com.neusoft.domimanage.action.DomiAction"
+        parameter="method">
+     <forward name="el" path="/jsp/domimanage/domiDel.jsp"/>
+     <forward name="dt" path="/jsp/domimanage/domiList.jsp"/>
+     <forward name="et" path="/jsp/domimanage/employeeList.jsp"/>
+</action> 	
+
+<!-- maked my lv zhengxia -->
+<action path="/deptchange"
+        name="DeptChangeForm"
+        scope="request"
+        type="com.neusoft.deptchangemanage.action.DeptChangeAction"
+        parameter="method">
+      <forward name="success" path="/jsp/deptchangemanage/empl_list.jsp"/> 
+      <forward name="change" path="/jsp/deptchangemanage/dept_change.jsp"/>
+      <forward name="deptchanged" path="/jsp/deptchangemanage/deptchange_list.jsp"/>
+</action>        	
+<!-- maked by Tanny -->
+<action path="/ProbationAction" 
+				        name="ProbationForm"
+				        scope="request" 
+				        type="com.neusoft.probmanage.action.ProbationAction" 
+				        parameter="method">
+				     <forward name="probationlist" path="/jsp/probmanage/Prob_ProbationInformation.jsp"/>
+				     <forward name="probationedlist" path="/jsp/probmanage/Prob_regularizedSearch.jsp"/>
+			         <forward name="probationededit" path="/jsp/probmanage/Prob_ProbationSearch.jsp"/>
+</action>
+<!-- maked my lai tian liang -->
+<action path="/job" 
+				name="jobForm" 
+				scope="request"
+				type="com.neusoft.jobmanage.action.JobAction"
+				parameter="method">			
+			<forward name="list" path="/jsp/jobmanage/LAIworkList.jsp" />
+			<forward name="jobByID" path="/jsp/jobmanage/LAIworkList.jsp" />
+			<forward name="job_add" path="/jsp/jobmanage/LAIaddWork.jsp" />
+			<forward name="jobName" path="/jsp/jobmanage/LAIeditWork.jsp" />
+			<forward name="jobCh" path="/jsp/jobchangemanage/LAImodifyImplementation.jsp" />
+						
+</action>
+<action path="/jobCh" 
+				name="jobForm" 
+				type="com.neusoft.jobchangemanage.action.JobChAction"
+				parameter="method">			
+			<forward name="jobChByID" path="/jsp/jobchangemanage/LAIchangeList.jsp" />
+			<forward name="editJobCh" path="/jsp/jobchangemanage/LAIconfirm.jsp" />		
+</action>
+<action path="/jobChList" 
+				name="jobChForm" 
+				type="com.neusoft.jobchangemanage.action.JobChAction"
+				parameter="method" 
+				scope="request">	
+			<forward name="jobChList" path="/jsp/jobchangemanage/LAIchangeList.jsp" />
+			<forward name="success" path="/jsp/jobchangemanage/LAImodifyImplementation.jsp" />		
+</action>
+<action path="/jobEmployeeActon"
+        type="com.neusoft.jobmanage.action.JobAction"  
+        name="EmployeeActionForm"
+        scope="request" 
+		parameter="method">
+    <forward name="jobemployCenter" path="/jsp/jobmanage/LAIapartEmployee.jsp"/>  
+</action>
+
+</action-mappings>
+	<message-resources parameter="ApplicationResources" />
+</struts-config>
+

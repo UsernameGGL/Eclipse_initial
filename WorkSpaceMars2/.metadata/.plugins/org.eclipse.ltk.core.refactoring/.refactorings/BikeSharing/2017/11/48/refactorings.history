@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;BikeSharing/WebContent/webpage/js/Paging_two.js&apos; to &apos;Paging_Display.js&apos;" description="Rename resource &apos;Paging_two.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/webpage/js/Paging_two.js" name="Paging_Display.js" stamp="1511746982906" updateReferences="true"/>
+</session>

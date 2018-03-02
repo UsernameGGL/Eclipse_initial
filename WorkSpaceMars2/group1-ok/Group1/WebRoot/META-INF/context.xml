@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+  <Resource
+    name="jdbc/user"
+    type="javax.sql.DataSource"
+    password="group1"
+    driverClassName="oracle.jdbc.driver.OracleDriver"
+    maxIdle="2"
+    maxWait="5000"
+    username="group1"
+    url="jdbc:oracle:thin:@10.10.25.66:1521:ORCL"
+    maxActive="4"/>
+  <WatchedResource>WEB-INF/web.xml</WatchedResource>
+</Context>

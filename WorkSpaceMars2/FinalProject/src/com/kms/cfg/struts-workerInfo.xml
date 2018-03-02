@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+<!-- 对workerinfo表操作的Action -->
+	<package name="_work" namespace="/work" extends="struts-default">
+		<action name="worker_*" class="com.kms.action.WorkerAction" method="{1}">
+			<result name="add">/workerInfo/add.jsp</result>
+			<result name="list">/NewAdmView/wokerInfoManager.jsp</result>
+			<result name="edit">/workerInfo/edit.jsp</result>
+			<result name="error">/workerInfo/workerinfo.jsp</result>
+			<result name="salList">/jobInfo/jobInfoList.jsp</result>
+		</action>
+	</package>
+</struts>

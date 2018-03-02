@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="F:\Eclipse\WorkSpaceMars2\login3"/>
+			<item value="F:\Eclipse\WorkSpaceMars2\FinalProject"/>
+			<item value="F:\Eclipse\WorkSpaceMars2\BikeSharing"/>
+			<item value="F:\Eclipse\WorkSpaceMars2\Paging"/>
+			<item value="F:\Eclipse\WorkSpaceMars2\login"/>
+			<item value="F:\Eclipse\WorkSpaceMars2\j91-kms_myself"/>
+			<item value="F:\Eclipse\WorkSpaceMars2\j98-struts"/>
+			<item value="F:\Eclipse\WorkSpaceMars2\SpringWebLogin"/>
+			<item value="F:\学习资料\大三上\软件复用与组件开发\Spring Ioc例子代码\TestIoc_01"/>
+			<item value="F:\Eclipse\WorkSpaceMars2\group1-ok"/>
+			<item value="F:\学习资料\大二下\小学期\工程\资料\成果物\group1-ok"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="ResourceNavigator">
+		<item value="Aggregate for window 1499407731962" key="ResourceWorkingSetFilter.STORE_WORKING_SET"/>
+		<item value="1" key="ResourceViewer.STORE_SORT_TYPE"/>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+</section>

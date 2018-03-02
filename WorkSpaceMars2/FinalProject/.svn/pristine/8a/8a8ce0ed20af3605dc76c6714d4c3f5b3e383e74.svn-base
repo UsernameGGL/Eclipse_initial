@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 对部门增删改查的Action -->
+	<package name="_position" namespace="/position" extends="struts-default">
+		<action name="position_*" class="com.kms.action.PositionFormAction" method="{1}">
+			<result name="add"></result>
+			<result name="delete"></result>
+			<result name="update"></result>
+			<result name="listposition">positionList.jsp</result>
+			<result name="listperson">personList.jsp</result>
+			<result name="error">error.jsp</result>
+		</action>
+	</package>
+</struts>

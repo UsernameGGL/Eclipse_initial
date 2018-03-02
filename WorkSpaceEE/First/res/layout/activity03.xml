@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="（正经脸）我对这个开发软件还不熟悉"
+	    android:layout_weight="1"
+        />
+    
+    
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="所以说虽然可以实现那些功能"
+	    android:layout_weight="1"
+        />
+    
+    <TextView
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="但每实现一个功能，都要耗费我至少半天的时间"
+	    android:layout_weight="2"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="其实如果只是这样那也没什么"
+	    android:layout_weight="1"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="我才不会被这点小挫折打到"
+	    android:layout_weight="1"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="但！（发疯脸）"
+	    android:layout_weight="1"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="啊啊啊啊啊啊啊啊啊啊啊卧槽"
+	    android:layout_weight="1"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="啊老师没告诉我这个软件是全英的啊"
+	    android:layout_weight="1"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="卧槽所有的网站说明书还有软件本身都TM英语啊啊啊啊啊啊啊 "
+	    android:layout_weight="2"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="从下载安装到配置插件全英啊啊 "
+	    android:layout_weight="2"
+        />
+        
+    
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="C班渣渣伤不起啊啊啊啊啊啊"
+	    android:layout_weight="1"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="（正经脸）准确的来说，我快死了"
+	    android:layout_weight="1"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="在我满血复活之前"
+	    android:layout_weight="1"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="编程？那是什么东西？好吃吗？"
+	    android:layout_weight="1"
+        />
+
+</LinearLayout>

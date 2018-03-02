@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<!--为工程引入dtd文件，编写代码做自动补齐功能  -->
+<struts><!--struts标签是文件的根标签  -->
+	<!-- constant 定义项目常量 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="true" />
+	
+	
+	<!-- package标签是action的外围标签，功能类似类的包
+		name 属性，类似于包名，在工程中不能重复
+		namespace : 定义action的url路径 文件夹名称 /  是web app的根
+		extends定义package的父包，复用父包的配置信息
+	 -->
+	<package name="abc" namespace="/" extends="struts-default">
+		<!-- action 定义类的方法和url路径的映射关系
+		name ：页面名称；url = namespace + "/" +  name + ".action";
+		class :定义url和类的映射关系；
+		method : 定义url和类的方法的关系
+		 -->
+		<action name="login" class="com.kms.action.HelloWorldAction"
+			method="execute">
+			<!-- rusult 定义方法返回值和视图页面的关系 -->
+			<result name="success">/view/HelloWorld.jsp</result>
+		</action>
+	</package>
+	<include file="com/kms/action/struts.xml"></include>
+</struts>

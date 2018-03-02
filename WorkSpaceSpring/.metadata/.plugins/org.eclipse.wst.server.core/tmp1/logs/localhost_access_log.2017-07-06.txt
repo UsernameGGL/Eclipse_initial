@@ -1,0 +1,5 @@
+127.0.0.1 - - [06/Jul/2017:10:39:47 +0800] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [06/Jul/2017:10:39:49 +0800] "GET /j98-struts-demo/index.jsp HTTP/1.1" 200 341
+0:0:0:0:0:0:0:1 - - [06/Jul/2017:10:39:50 +0800] "GET /j98-struts-demo/demoest.action HTTP/1.1" 200 284
+0:0:0:0:0:0:0:1 - - [06/Jul/2017:10:40:41 +0800] "GET /j98-struts-demo/index.jsp HTTP/1.1" 200 341
+0:0:0:0:0:0:0:1 - - [06/Jul/2017:10:40:42 +0800] "GET /j98-struts-demo/demoest.action HTTP/1.1" 200 284

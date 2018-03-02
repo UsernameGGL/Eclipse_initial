@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+	<!--定义映射-->
+    <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings">
+            <props>
+                <prop key="login.do">loginController</prop>
+            </props>
+        </property>
+	</bean>
+	
+	<!--定义视图-->
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass">
+            <value>org.springframework.web.servlet.view.InternalResourceView</value>
+        </property> 
+	</bean>
+	  
+    <bean id="loginController" class="com.upc.LoginController">
+        <property name="commandClass">
+            <value>com.upc.bean.LoginBean</value>
+        </property>
+        
+        <property name="sussPage">
+            <value>/suss.jsp</value>
+        </property>
+        
+        <property name="failurePage">
+            <value>/failure.jsp</value>
+        </property>
+    </bean>   
+    
+</beans>
